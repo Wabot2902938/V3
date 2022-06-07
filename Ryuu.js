@@ -117,7 +117,7 @@ alphakey = setting.AlphaKey
 
 //Auto Bio & Dll
 healtawal = 100
-autobio = true
+autobio = false
 public = true
 menusimpel = false
 let blocked = []
@@ -229,7 +229,7 @@ const isBanned = ban.includes(sender)
 const isEventon = isGroup ? event.includes(from) : false
 const isPrem = premium.includes(sender)
 const isAntiLink = isGroup ? antilink.includes(from) : false
-const isWelkom = isGroup ? _welkom.includes(from) : false 
+const isWelkom = isGroup ? _welkom.includes(from) : true 
 const isOwner = ownerNumber.includes(sender)
 const isMybot = isOwner || mek.key.fromMe
 const itsMe = mek.key.fromMe ? true : false
@@ -668,7 +668,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
 "videoMessage": { 
-"title": `Atsair Botz🐧`,
+"title": `Skywaa Botz🐧`,
 "h": `${tampilUcapan} ${pushname}`,
 'duration': '99999', 
 'caption': `${tampilUcapan} ${pushname}`,
@@ -909,7 +909,7 @@ teks =
 Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI 💸' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 🌱' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 }
-else if(menusimpel = true){
+else if(menusimpel = false){
 listMsg = {
 buttonText: 'Click Here!!!',
 footerText: fake,
